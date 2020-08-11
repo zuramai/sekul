@@ -1,0 +1,24 @@
+.card {
+    .card-header {
+        background-color: #fff;
+        border-bottom: 0;
+        padding: 1.5rem 2rem;
+
+        .card-subtitle {
+            color: $gray-600;
+            font-size: $font-size-sm;
+        }
+    }
+    &.card-shadow {
+        border: none;
+        box-shadow: 0 .3rem 1.4rem #eee;
+    }   
+
+    &.card-statistic {
+        padding: .875rem 1rem;
+        h5 {
+            font-weight: 500;
+            color: #474747
+        }
+    }
+}

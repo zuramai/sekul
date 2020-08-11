@@ -1,0 +1,23 @@
+#app {
+    display: flex;
+
+    #main {
+        padding: 4rem 3rem;
+        margin-left: 310px;
+        flex-grow: 1;
+        min-height: 100vh;
+        
+        background-color: #f6f8fb;
+        .page-title  {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            h3 {
+                font-weight: 500;
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+a {
+  text-decoration: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.avatar.avatar-xl {
+  width: 4rem;
+  height: 4rem;
+}
+
+.breadcrumb-header ol {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.card .card-header {
+  background-color: #fff;
+  border-bottom: 0;
+  padding: 1.5rem 2rem;
+}
+
+.card .card-header .card-subtitle {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.card.card-shadow {
+  border: none;
+  box-shadow: 0 0.3rem 1.4rem #eee;
+}
+
+.card.card-statistic {
+  padding: 0.875rem 1rem;
+}
+
+.card.card-statistic h5 {
+  font-weight: 500;
+  color: #474747;
+}
+
+.table th {
+  color: #495057;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #ced4da;
+}
+
+#app {
+  display: flex;
+}
+
+#app #main {
+  padding: 4rem 3rem;
+  margin-left: 310px;
+  flex-grow: 1;
+  min-height: 100vh;
+  background-color: #f6f8fb;
+}
+
+#app #main .page-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#app #main .page-title h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
+
+#sidebar-wrapper {
+  width: 310px;
+  background-color: #edf1fa;
+  height: 100vh;
+  position: fixed;
+}
+
+#sidebar-wrapper .sidebar-header {
+  padding: 2rem;
+}
+
+#sidebar-wrapper .sidebar-header .sidebar-logo {
+  font-size: 2rem;
+}
+
+#sidebar-wrapper .sidebar-menu {
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar-wrapper .sidebar-menu .sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #434343;
+  padding: 0 2rem 1rem;
+}
+
+#sidebar-wrapper .sidebar-item {
+  list-style: none;
+  width: 100%;
+  align-items: center;
+}
+
+#sidebar-wrapper .sidebar-item.active > a {
+  color: #3d4d75;
+  font-weight: bold;
+}
+
+#sidebar-wrapper .sidebar-item.active > a svg {
+  color: #1C08DA;
+}
+
+#sidebar-wrapper .sidebar-item > .sidebar-link {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  color: #6b6f80;
+  padding: 1rem 2rem;
+}
+
+#sidebar-wrapper .sidebar-item > .sidebar-link svg {
+  margin-right: 1rem;
+}
+
+#sidebar-wrapper .sidebar-item .submenu {
+  margin-left: 2.5rem;
+}
+
+#sidebar-wrapper .sidebar-item .submenu li {
+  list-style: none;
+  padding: 0.6rem 1rem;
+}
+
+#sidebar-wrapper .sidebar-item .submenu li a {
+  color: #888;
+}
+

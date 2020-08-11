@@ -1,0 +1,18 @@
+.text-blue-100 { color: $blue-100 }
+.text-blue-200 { color: $blue-200 }
+.text-blue-300 { color: $blue-300 }
+.text-blue-400 { color: $blue-400 }
+.text-blue-500 { color: $blue-500 }
+.text-blue-600 { color: $blue-600 }
+.text-blue-700 { color: $blue-700 }
+.text-blue-800 { color: $blue-800 }
+.bg-rgba-primary { background:rgba(90,141,238,.2) !important }
+.bg-rgba-danger { background:rgba(255,91,92,.2) !important }
+.bg-rgba-warning { background: rgba($yellow-400, .2) !important }
+.bg-rgba-success { background: rgba(57,218,138,.2) !important }
+.avatar {
+    &.bg-rgba-danger { color: $red-400 }
+    &.bg-rgba-warning { color: $yellow-400 }
+    &.bg-rgba-success { color: $green-600 }
+    &.bg-rgba-primary { color: $blue-400 }
+}

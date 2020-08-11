@@ -1,0 +1,33 @@
+<div id="sidebar-wrapper" class='sidebar'>
+    <div class="sidebar-header">
+        <div class="sidebar-logo">Se<span class='text-blue-400'>kul</span></div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="sidebar-menu">
+            {% for sidebarItem in sidebarItems %}
+            {% if sidebarItem.isTitle %}
+            {% else %}
+                <li class="sidebar-item {{ 'active' if (sidebarItem.url == filename or filename|containString(sidebarItem.key)) }} {{'has-sub' if sidebarItem.submenu.length > 0 }}">
+                    <a href="{{sidebarItem.url if sidebarItem.url!==undefined else '#'}}" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#{{sidebarItem.icon}}"/>
+                          </svg>
+                        <span>{{sidebarItem.name}}</span>
+                    </a>
+                    {% if sidebarItem.submenu.length > 0 %}
+                    <ul class="submenu {{ 'active' if (sidebarItem.url == filename or filename|containString(sidebarItem.key)) }}">
+                        {% for sub in sidebarItem.submenu %}
+                        <li>
+                            <a href="{{ sub.url }}">{{ sub.name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+
+            {% endif %}
+            {% endfor %}
+         
+        </ul>
+    </div>
+</div>
