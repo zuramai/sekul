@@ -94,7 +94,22 @@
 /***/ (function(module, exports) {
 
 // Init Perfect Scrollbar
-var ps = new PerfectScrollbar('#sidebar-wrapper');
+var ps = new PerfectScrollbar('#sidebar-wrapper'); // Dropdown Sidebar Menu
+
+var sidebarItems = document.querySelectorAll('.sidebar-item.has-sub');
+
+var _loop = function _loop() {
+  var sidebarItem = sidebarItems[i];
+  sidebarItems[i].querySelector('.sidebar-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    var submenu = sidebarItem.querySelector('.submenu');
+    if (submenu.classList.contains('active')) submenu.classList.remove('active');else submenu.classList.add('active');
+  });
+};
+
+for (var i = 0; i < sidebarItems.length; i++) {
+  _loop();
+}
 
 /***/ }),
 

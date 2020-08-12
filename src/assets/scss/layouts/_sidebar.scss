@@ -28,6 +28,7 @@
         list-style: none;
         width: 100%;
         align-items:center;
+        overflow: hidden;
 
         &.active {
             & > a {
@@ -40,12 +41,38 @@
             }
         }
 
+        &.has-sub {
+            position: relative;
+
+            &:after {
+                content: url("data:image/svg+xml,%3Csvg width='1.5em' height='1.5em' viewBox='0 0 16 16' class='bi bi-chevron-compact-down text-muted' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z'/%3E%3C/svg%3E");
+                position:absolute;
+                right: 1.2rem;
+                top: 1.1rem;
+                bottom: 0;
+            }
+        }
+
+        &:not(.active) {
+            & > .sidebar-link:hover {
+                color: $gray-800;
+
+                span {
+                    transition: all .5s;
+                    margin-left: 2px;
+                }
+            }
+        }
+
         & > .sidebar-link {
             font-size: $spacer * 1.1;
             display: flex;
             align-items:center;
             color: #6b6f80;
             padding: 1rem 2rem;
+            transition: all .2s;
+
+            
 
             svg {
                 margin-right: 1rem;
@@ -54,15 +81,57 @@
 
         .submenu {
             margin-left: 2.5rem;
+            transition: max-height 1s;
+
+            &:not(.active) {
+                max-height: 0;
+            }
+
+            &.active {
+                max-height: 999px;
+            }
             
-            li {
+            .submenu-item {
                 list-style: none;
+                position: relative;
                 padding: .6rem 1rem;
                 
                 a {
                     color: #888;
+                    display:block;
+                    transition: all .5s;
+
+                    &:hover {
+                        margin-left: 2px;
+                        color: $gray-700;
+                    }
+                }
+
+                &.active {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: .5rem;
+                        height: .5rem;
+                        border-radius: 50%;
+                        background-color: $blue-500;
+                        box-shadow: 1px 1px 2px rgba($blue-500,.2);
+                        left: -.7rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    a {
+                        color: $blue-500;
+                        text-shadow: 1px 1px 2px rgba($blue-500,.2);
+                    }
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sidebar-wrapper {
+        left: -310px;
     }
 }

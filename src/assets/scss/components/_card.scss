@@ -9,6 +9,9 @@
             font-size: $font-size-sm;
         }
     }
+    .card-body {
+        padding: 0 2rem 1.5rem;
+    }
     &.card-shadow {
         border: none;
         box-shadow: 0 .3rem 1.4rem #eee;

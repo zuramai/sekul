@@ -6,13 +6,40 @@
 .text-blue-600 { color: $blue-600 }
 .text-blue-700 { color: $blue-700 }
 .text-blue-800 { color: $blue-800 }
+.text-gray-100 { color: $gray-100 }
+.text-gray-200 { color: $gray-200 }
+.text-gray-300 { color: $gray-300 }
+.text-gray-400 { color: $gray-400 }
+.text-gray-500 { color: $gray-500 }
+.text-gray-600 { color: $gray-600 }
+.text-gray-700 { color: $gray-700 }
+.text-gray-800 { color: $gray-800 }
+
 .bg-rgba-primary { background:rgba(90,141,238,.2) !important }
 .bg-rgba-danger { background:rgba(255,91,92,.2) !important }
 .bg-rgba-warning { background: rgba($yellow-400, .2) !important }
 .bg-rgba-success { background: rgba(57,218,138,.2) !important }
+
 .avatar {
     &.bg-rgba-danger { color: $red-400 }
     &.bg-rgba-warning { color: $yellow-400 }
     &.bg-rgba-success { color: $green-600 }
     &.bg-rgba-primary { color: $blue-400 }
 }
+.alert {
+    &.alert-light-primary { color: $blue-600; background-color: rgba($blue-200, .3); }
+    &.alert-light-secondary { color: $gray-700; background-color: rgba($gray-400, .3); }
+    &.alert-light-success { color: $green-700; background-color: rgba($green-200, .3); }
+    &.alert-light-danger { color: $red-700; background-color: rgba($red-200, .3); }
+    &.alert-light-warning { color: $yellow-700; background-color: rgba($yellow-200, .3); }
+    &.alert-light-info { color: $blue-600; background-color: rgba($blue-200, .1); }
+}
+
+.alert-primary { color: $white; background-color: #5A8DEE ; box-shadow: rgba(90,141,238,.4); }
+.alert-secondary { color: $white; background-color: $gray-500; box-shadow: 1px 2px 10px rgba(lighten($gray-400, .5), .6); }
+.alert-success { color: $white; background-color: #39da8a; box-shadow: 1px 2px 10px rgba($green-100, .2); }
+.alert-danger { color: $white; background-color: $red-400; box-shadow: 1px 2px 10px rgba($red-100, .2); }
+.alert-warning { color: $white; background-color: $yellow-500; box-shadow: 1px 2px 10px rgba($yellow-100, .2); }
+.alert-info { color: $white; background-color: #00CFDD; box-shadow: 0 3px 8px 0 rgba(0,207,221,.4); }
+.alert-light { color: $gray-600; background-color: $gray-200;  }
+.alert-dark { color: $white; background-color: lighten($black, 40%); box-shadow: 0 3px 8px $gray-300; }

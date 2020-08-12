@@ -1,69 +1,5 @@
 @charset "UTF-8";
 
-.text-blue-100 {
-  color: #a8cbfe;
-}
-
-.text-blue-200 {
-  color: #81b4fe;
-}
-
-.text-blue-300 {
-  color: #5a9cfe;
-}
-
-.text-blue-400 {
-  color: #3485fd;
-}
-
-.text-blue-500 {
-  color: #0d6efd;
-}
-
-.text-blue-600 {
-  color: #0b5cd5;
-}
-
-.text-blue-700 {
-  color: #094bac;
-}
-
-.text-blue-800 {
-  color: #073984;
-}
-
-.bg-rgba-primary {
-  background: rgba(90, 141, 238, 0.2) !important;
-}
-
-.bg-rgba-danger {
-  background: rgba(255, 91, 92, 0.2) !important;
-}
-
-.bg-rgba-warning {
-  background: rgba(255, 203, 47, 0.2) !important;
-}
-
-.bg-rgba-success {
-  background: rgba(57, 218, 138, 0.2) !important;
-}
-
-.avatar.bg-rgba-danger {
-  color: #e25563;
-}
-
-.avatar.bg-rgba-warning {
-  color: #ffcb2f;
-}
-
-.avatar.bg-rgba-success {
-  color: #228c3a;
-}
-
-.avatar.bg-rgba-primary {
-  color: #3485fd;
-}
-
 /*!
  * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -11099,5 +11035,178 @@ button.close {
   .d-print-inline-flex {
     display: inline-flex !important;
   }
+}
+
+.text-blue-100 {
+  color: #a8cbfe;
+}
+
+.text-blue-200 {
+  color: #81b4fe;
+}
+
+.text-blue-300 {
+  color: #5a9cfe;
+}
+
+.text-blue-400 {
+  color: #3485fd;
+}
+
+.text-blue-500 {
+  color: #0d6efd;
+}
+
+.text-blue-600 {
+  color: #0b5cd5;
+}
+
+.text-blue-700 {
+  color: #094bac;
+}
+
+.text-blue-800 {
+  color: #073984;
+}
+
+.text-gray-100 {
+  color: #f8f9fa;
+}
+
+.text-gray-200 {
+  color: #e9ecef;
+}
+
+.text-gray-300 {
+  color: #dee2e6;
+}
+
+.text-gray-400 {
+  color: #ced4da;
+}
+
+.text-gray-500 {
+  color: #adb5bd;
+}
+
+.text-gray-600 {
+  color: #6c757d;
+}
+
+.text-gray-700 {
+  color: #495057;
+}
+
+.text-gray-800 {
+  color: #343a40;
+}
+
+.bg-rgba-primary {
+  background: rgba(90, 141, 238, 0.2) !important;
+}
+
+.bg-rgba-danger {
+  background: rgba(255, 91, 92, 0.2) !important;
+}
+
+.bg-rgba-warning {
+  background: rgba(255, 203, 47, 0.2) !important;
+}
+
+.bg-rgba-success {
+  background: rgba(57, 218, 138, 0.2) !important;
+}
+
+.avatar.bg-rgba-danger {
+  color: #e25563;
+}
+
+.avatar.bg-rgba-warning {
+  color: #ffcb2f;
+}
+
+.avatar.bg-rgba-success {
+  color: #228c3a;
+}
+
+.avatar.bg-rgba-primary {
+  color: #3485fd;
+}
+
+.alert.alert-light-primary {
+  color: #0b5cd5;
+  background-color: rgba(129, 180, 254, 0.3);
+}
+
+.alert.alert-light-secondary {
+  color: #495057;
+  background-color: rgba(206, 212, 218, 0.3);
+}
+
+.alert.alert-light-success {
+  color: #1b722f;
+  background-color: rgba(143, 209, 158, 0.3);
+}
+
+.alert.alert-light-danger {
+  color: #96242f;
+  background-color: rgba(237, 150, 158, 0.3);
+}
+
+.alert.alert-light-warning {
+  color: #ad8305;
+  background-color: rgba(255, 223, 126, 0.3);
+}
+
+.alert.alert-light-info {
+  color: #0b5cd5;
+  background-color: rgba(129, 180, 254, 0.1);
+}
+
+.alert-primary {
+  color: #fff;
+  background-color: #5A8DEE;
+  box-shadow: rgba(90, 141, 238, 0.4);
+}
+
+.alert-secondary {
+  color: #fff;
+  background-color: #adb5bd;
+  box-shadow: 1px 2px 10px rgba(207, 213, 219, 0.6);
+}
+
+.alert-success {
+  color: #fff;
+  background-color: #39da8a;
+  box-shadow: 1px 2px 10px rgba(178, 223, 188, 0.2);
+}
+
+.alert-danger {
+  color: #fff;
+  background-color: #e25563;
+  box-shadow: 1px 2px 10px rgba(242, 182, 188, 0.2);
+}
+
+.alert-warning {
+  color: #fff;
+  background-color: #ffc107;
+  box-shadow: 1px 2px 10px rgba(255, 233, 166, 0.2);
+}
+
+.alert-info {
+  color: #fff;
+  background-color: #00CFDD;
+  box-shadow: 0 3px 8px 0 rgba(0, 207, 221, 0.4);
+}
+
+.alert-light {
+  color: #6c757d;
+  background-color: #e9ecef;
+}
+
+.alert-dark {
+  color: #fff;
+  background-color: #666666;
+  box-shadow: 0 3px 8px #dee2e6;
 }
 

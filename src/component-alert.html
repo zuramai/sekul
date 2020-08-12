@@ -1,0 +1,152 @@
+{% extends 'layouts/master.html' %}
+{% set filename = "component-alert.html" %}
+{% set web_title = "Alerts" %}
+{% block content %}
+
+<div class="page-title">
+    <h3>Alerts</h3>
+    <nav class='breadcrumb-header' aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Alert</li>
+        </ol>
+      </nav>
+</div>
+<div class="page-content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Basic Alert</h5>
+                    <p>A default alert style</p>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                      </div>
+                      <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                      </div>
+                      <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                      </div>
+                      <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                      </div>
+                      <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                      </div>
+                      <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Light Alert</h5>
+                    <p>An alert with light colors</p>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-light-primary" role="alert">
+                        A simple light primary alert—check it out!
+                      </div>
+                      <div class="alert alert-light-secondary" role="alert">
+                        A simple light secondary alert—check it out!
+                      </div>
+                      <div class="alert alert-light-success" role="alert">
+                        A simple light success alert—check it out!
+                      </div>
+                      <div class="alert alert-light-danger" role="alert">
+                        A simple light danger alert—check it out!
+                      </div>
+                      <div class="alert alert-light-warning" role="alert">
+                        A simple light warning alert—check it out!
+                      </div>
+                      <div class="alert alert-light-info" role="alert">
+                        A simple light info alert—check it out!
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-2">
+                        <div class="card-header">
+                            <h5 class="card-title">Alert With Icon</h5>
+                            <p>An alert with light colors</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-light-primary" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple primary alert—check it out!
+                            </div>
+                            <div class="alert alert-light-secondary" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple secondary alert—check it out!
+                            </div>
+                            <div class="alert alert-light-success" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple success alert—check it out!
+                            </div>
+                            <div class="alert alert-light-danger" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple danger alert—check it out!
+                            </div>
+                            <div class="alert alert-light-warning" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple warning alert—check it out!
+                            </div>
+                            <div class="alert alert-light-info" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple info alert—check it out!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mt-2">
+                        <div class="card-header">
+                            <h5 class="card-title">Alert With Title</h5>
+                            <p>An alert with light colors</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-light-primary" role="alert">
+                                <h4 class="alert-heading">Well done!</h4>
+                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            </div>
+                            <div class="alert alert-light-success" role="alert">
+                                <h4 class="alert-heading">Congratulations!</h4>
+                                <p>Congratulations for completed your exam! you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

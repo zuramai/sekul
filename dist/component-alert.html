@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekul Dashboard</title>
+    <title>Alerts</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
@@ -22,7 +22,7 @@
             
             
             
-                <li class="sidebar-item active ">
+                <li class="sidebar-item  ">
                     <a href="index.html" class='sidebar-link'>
                         <svg class="bi" width="20" height="20" fill="currentColor">
                             <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#house-door"/>
@@ -35,7 +35,7 @@
             
             
             
-                <li class="sidebar-item  has-sub">
+                <li class="sidebar-item active has-sub">
                     <a href="#" class='sidebar-link'>
                         <svg class="bi" width="20" height="20" fill="currentColor">
                             <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#triangle"/>
@@ -43,9 +43,9 @@
                         <span>Components</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu active">
                         
-                        <li class="submenu-item ">
+                        <li class="submenu-item active">
                             <a href="component-alert.html">Alert</a>
                         </li>
                         
@@ -354,168 +354,145 @@
             
 
 <div class="page-title">
-    <h3>Dashboard</h3>
+    <h3>Alerts</h3>
     <nav class='breadcrumb-header' aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Alert</li>
         </ol>
       </nav>
 </div>
 <div class="page-content">
     <div class="row">
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Rata2 Nilai</h5>
-                            <h1>87,5</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-primary ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bar-chart-line"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Basic Alert</h5>
+                    <p>A default alert style</p>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
                 <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Tugas Selesai</h5>
-                            <h1>19</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-success ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-check-fill"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Tugas Menunggu</h5>
-                            <h1>5</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-warning ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-text-fill"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Tidak Hadir</h5>
-                            <h1>3</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-danger ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#x"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                      </div>
+                      <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                      </div>
+                      <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                      </div>
+                      <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                      </div>
+                      <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                      </div>
+                      <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                      </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row mt-4">
-        <div class="col-md-6 mt-3">
+        <div class="col-12">
             <div class="card card-shadow">
                 <div class="card-header">
-                    <h5 class="card-title">Nilai Rata-Rata</h5>
-                    <p class="card-subtitle">Berikut adalah nilai rata-rata dari mata pelajaran</p>
+                    <h5 class="card-title">Light Alert</h5>
+                    <p>An alert with light colors</p>
                 </div>
                 <div class="card-body">
-                    <div id="average-chart"></div>
+                    <div class="alert alert-light-primary" role="alert">
+                        A simple light primary alert—check it out!
+                      </div>
+                      <div class="alert alert-light-secondary" role="alert">
+                        A simple light secondary alert—check it out!
+                      </div>
+                      <div class="alert alert-light-success" role="alert">
+                        A simple light success alert—check it out!
+                      </div>
+                      <div class="alert alert-light-danger" role="alert">
+                        A simple light danger alert—check it out!
+                      </div>
+                      <div class="alert alert-light-warning" role="alert">
+                        A simple light warning alert—check it out!
+                      </div>
+                      <div class="alert alert-light-info" role="alert">
+                        A simple light info alert—check it out!
+                      </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mt-3">
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
             <div class="card card-shadow">
-                <div class="card-header">
-                    <h5 class="card-title ">Todo List</h5>
-                    <p class="card-subtitle ">Hal yang harus kamu kerjakan</p>
-                </div>
-                <div class="card-body p-0">
-                    <table class="table table-striped mb-0">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Tugas</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class='text-center'>
-                                    <svg class="bi text-muted" width="20" height="20" fill="currentColor">
-                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
-                                    </svg>
-                                </td>
-                                <td>Tugas MTK</td>
-                                <td>
-                                    <span class="avatar avatar-icon bg-rgba-success ">
-                                        <svg class="bi" width="16" height="16" fill="currentColor">
-                                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check"/>
-                                        </svg>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class='text-center'>
-                                    <svg class="bi text-muted" width="20" height="20" fill="currentColor">
-                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
-                                    </svg>
-                                </td>
-                                <td>Praktek Agama</td>
-                                <td>
-                                    <span class="avatar avatar-icon bg-rgba-primary ">
-                                        <svg class="bi" width="16" height="16" fill="currentColor">
-                                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bullseye"/>
-                                        </svg>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class='text-center'>
-                                    <svg class="bi text-muted" width="20" height="20" fill="currentColor">
-                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
-                                    </svg>
-                                </td>
-                                <td>Kerjain B.Indo</td>
-                                <td>
-                                    <span class="avatar avatar-icon bg-rgba-primary ">
-                                        <svg class="bi" width="16" height="16" fill="currentColor">
-                                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bullseye"/>
-                                        </svg>
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-2">
+                        <div class="card-header">
+                            <h5 class="card-title">Alert With Icon</h5>
+                            <p>An alert with light colors</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-light-primary" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple primary alert—check it out!
+                            </div>
+                            <div class="alert alert-light-secondary" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple secondary alert—check it out!
+                            </div>
+                            <div class="alert alert-light-success" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple success alert—check it out!
+                            </div>
+                            <div class="alert alert-light-danger" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple danger alert—check it out!
+                            </div>
+                            <div class="alert alert-light-warning" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple warning alert—check it out!
+                            </div>
+                            <div class="alert alert-light-info" role="alert">
+                                <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                A simple info alert—check it out!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mt-2">
+                        <div class="card-header">
+                            <h5 class="card-title">Alert With Title</h5>
+                            <p>An alert with light colors</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-light-primary" role="alert">
+                                <h4 class="alert-heading">Well done!</h4>
+                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            </div>
+                            <div class="alert alert-light-success" role="alert">
+                                <h4 class="alert-heading">Congratulations!</h4>
+                                <p>Congratulations for completed your exam! you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -528,11 +505,6 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     
-
-<script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
-<script src="assets/js/pages/dashboard.js"></script>
-
-
     <script src="assets/js/app.js"></script>
 </body>
 </html>

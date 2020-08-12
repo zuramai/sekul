@@ -21,3 +21,10 @@
         }
     }
 }
+
+
+@media screen and (max-width: 767px) {
+    #app #main {
+        margin-left:0;
+    }
+}
