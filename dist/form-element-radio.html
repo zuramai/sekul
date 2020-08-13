@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Radio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
       rel="stylesheet"
@@ -152,7 +152,7 @@
                     
                     <ul class="submenu active">
                         
-                        <li class="submenu-item active">
+                        <li class="submenu-item ">
                             <a href="form-element-input.html">Input</a>
                         </li>
                         
@@ -164,7 +164,7 @@
                             <a href="form-element-select.html">Select</a>
                         </li>
                         
-                        <li class="submenu-item ">
+                        <li class="submenu-item active">
                             <a href="form-element-radio.html">Radio</a>
                         </li>
                         
@@ -360,13 +360,13 @@
         
 
 <div class="page-title">
-  <h3>Input</h3>
+  <h3>Radio</h3>
   <nav class="breadcrumb-header" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="index.html">Dashboard</a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">Input</li>
+      <li class="breadcrumb-item active" aria-current="page">Radio</li>
     </ol>
   </nav>
 </div>
@@ -375,115 +375,121 @@
     <div class="col-12">
       <div class="card card-shadow">
         <div class="card-header">
-          <h5 class="card-title">Input</h5>
-          <p>A default input style</p>
+          <h5 class="card-title">Basic Radio</h5>
+          <p>A default radio style</p>
         </div>
         <div class="card-body">
-          <div class="">
-            <input type="text" class="form-control" placeholder="Basic Input" />
+          <div>
+            <div class="radio">
+              <input
+                name="example"
+                type="radio"
+                class="form-check-input"
+                checked=""
+              />
+              <label>Active</label>
+            </div>
           </div>
 
           <div class="mt-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Readonly Input"
-              readonly
-            />
-          </div>
-
-          <div class="mt-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Disabled Input"
-              disabled
-            />
-          </div>
-
-          <div class="mt-3">
-            <label for="">Email</label>
-            <small class="text-muted">eg.<i>someone@example.com</i></small>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="With Example"
-            />
-          </div>
-
-          <div class="mt-3">
-            <input
-              type="text"
-              class="border-0 form-control-static"
-              placeholder="Static Input"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-4">
-    <div class="col-12">
-      <div class="card card-shadow">
-        <div class="card-header">
-          <h5 class="card-title">Input Size</h5>
-          <p>An input with size</p>
-        </div>
-        <div class="card-body">
-          <div class="">
-            <input
-              type="text"
-              class="form-control form-control-sm"
-              placeholder="Small"
-            />
-          </div>
-
-          <div class="mt-4">
-            <input type="text" class="form-control" placeholder="Normal" />
-          </div>
-
-          <div class="mt-4">
-            <input
-              type="text"
-              class="form-control form-control-lg"
-              placeholder="Large"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-12">
-        <div class="card card-shadow">
-          <div class="card-header">
-            <h5 class="card-title">Validation Input</h5>
-            <p>An input with validation style</p>
-          </div>
-          <div class="card-body">
-            <div class="">
-              <div class="mt-3">
-                <input
-                  type="text"
-                  class="form-control is-invalid "
-                  placeholder="Invalid Input"
-                />
-              </div>
-
-              <div class="mt-3">
-                <input
-                  type="text"
-                  class="form-control is-valid "
-                  placeholder="Valid Input"
-                />
+            <div class="mt-3">
+              <div class="radio">
+                <input name="example" type="radio" class="form-check-input" />
+                <label>Inactive</label>
               </div>
             </div>
           </div>
+
+          <div class="mt-3">
+    
+            <div class="radio">
+              <input
+                name="example2"
+                type="radio"
+                class="form-check-input"
+                disabled
+                checked
+              />
+              <label>Active Disabled</label>
+            </div>
+     
+          </div>
+
+          <div class="mt-3">
+      
+            <div class="radio">
+              <input
+                name="example2"
+                type="radio"
+                class="form-check-input"
+                disabled
+              />
+              <label>Inactive Disabled</label>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+        <div class="card card-shadow">
+            <div class="card-header">
+            <h5 class="card-title">Custom Radio Button</h5>
+            <p>A radio button with custom style</p>
+            </div>
+            <div class="card-body">
+            <div class="">
+                <div>
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-primary" name="coloredRadio">
+                        <label>Primary</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-success" name="coloredRadio">
+                        <label>Success</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-info" name="coloredRadio">
+                        <label>Info</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-warning" name="coloredRadio">
+                        <label>Warning</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-secondary" name="coloredRadio">
+                        <label>Secondary</label>
+                    </div>
+                </div>
+
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-danger" name="coloredRadio">
+                        <label>Danger</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 </div>
 
 
