@@ -1,419 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Elements - Input Group</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css"
-    />
-    <link rel="stylesheet" href="assets/css/app.css" />
-  </head>
-  <body class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class='light'>
     <div id="app">
-      <div id="sidebar-wrapper" class="sidebar">
-        <div class="sidebar-header">
-          <div class="sidebar-logo text-center">
-            Se<span class="text-blue-400">kul</span>
+        <div id="sidebar-wrapper" class='sidebar'>
+    <div class="sidebar-header">
+        <div class="sidebar-logo text-center">Se<span class='text-blue-400'>kul</span></div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="sidebar-menu">
+            
+            
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="index.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#house-door"/>
+                          </svg>
+                        <span>Dashboard</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item active has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#triangle"/>
+                          </svg>
+                        <span>Components</span>
+                    </a>
+                    
+                    <ul class="submenu active">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-alert.html">Alert</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-badge.html">Badge</a>
+                        </li>
+                        
+                        <li class="submenu-item active">
+                            <a href="component-breadcrumb.html">Breadcrumb</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-buttons.html">Buttons</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-card.html">Card</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-carousel.html">Carousel</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-dropdowns.html">Dropdowns</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-list-group.html">List Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-modal.html">Modal</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-navs.html">Navs</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-pagination.html">Pagination</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-progress.html">Progress</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-spinners.html">Spinners</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-tooltips.html">Tooltips</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#briefcase"/>
+                          </svg>
+                        <span>Extra Components</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-avatar.html">Avatar</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="component-extra-divider.html">Divider</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-text"/>
+                          </svg>
+                        <span>Form Elements</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input.html">Input</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-input-group.html">Input Group</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-select.html">Select</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-radio.html">Radio</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-checkbox.html">Checkbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="form-element-textarea.html">Textarea</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-layout.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#layout"/>
+                          </svg>
+                        <span>Form Layout</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="form-editor.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#layers"/>
+                          </svg>
+                        <span>Form Editor</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="table.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#grid"/>
+                          </svg>
+                        <span>Table</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  ">
+                    <a href="table-datatable.html" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-plus"/>
+                          </svg>
+                        <span>Datatable</span>
+                    </a>
+                    
+                </li>
+
+            
+            
+            
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#user"/>
+                          </svg>
+                        <span>Widgets</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chatbox.html">Chatbox</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-pricing.html">Pricing</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-todolist.html">To-do List</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#trending-up"/>
+                          </svg>
+                        <span>Charts</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-chartjs.html">ChartJS</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="ui-chart-apexchart.html">Apexchart</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#user"/>
+                          </svg>
+                        <span>Authentication</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-login.html">Login</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-register.html">Register</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="auth-forgot-password.html">Forgot Password</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+            
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alert-circle"/>
+                          </svg>
+                        <span>Errors</span>
+                    </a>
+                    
+                    <ul class="submenu ">
+                        
+                        <li class="submenu-item ">
+                            <a href="error-403.html">403</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-404.html">404</a>
+                        </li>
+                        
+                        <li class="submenu-item ">
+                            <a href="error-500.html">500</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+            
+            
+         
+        </ul>
+    </div>
+</div>
+        <div id="main">
+            
+
+<div class="page-title">
+  <h3>Input Group</h3>
+  <nav class="breadcrumb-header" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Dashboard</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Alert</li>
+    </ol>
+  </nav>
+</div>
+<div class="page-content">
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-shadow">
+        <div class="card-header">
+          <h5 class="card-title">Input Group</h5>
+          <p>A default input group style</p>
+        </div>
+        <div class="card-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text">prepend</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Prepend only"
+            />
           </div>
-        </div>
-        <div class="sidebar-body">
-          <ul class="sidebar-menu">
-            <li class="sidebar-item  ">
-              <a href="index.html" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#house-door"
-                  />
-                </svg>
-                <span>Dashboard</span>
-              </a>
-            </li>
 
-            <li class="sidebar-item active has-sub">
-              <a href="#" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#triangle"
-                  />
-                </svg>
-                <span>Components</span>
-              </a>
-
-              <ul class="submenu active">
-                <li class="submenu-item active">
-                  <a href="component-alert.html">Alert</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-badge.html">Badge</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-breadcrumb.html">Breadcrumb</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-buttons.html">Buttons</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-card.html">Card</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-carousel.html">Carousel</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-dropdowns.html">Dropdowns</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-list-group.html">List Group</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-modal.html">Modal</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-navs.html">Navs</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-pagination.html">Pagination</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-progress.html">Progress</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-spinners.html">Spinners</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-tooltips.html">Tooltips</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="sidebar-item  has-sub">
-              <a href="#" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#briefcase"
-                  />
-                </svg>
-                <span>Extra Components</span>
-              </a>
-
-              <ul class="submenu ">
-                <li class="submenu-item ">
-                  <a href="component-extra-avatar.html">Avatar</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="component-extra-divider.html">Divider</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="sidebar-item  has-sub">
-              <a href="#" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-text"
-                  />
-                </svg>
-                <span>Form Elements</span>
-              </a>
-
-              <ul class="submenu ">
-                <li class="submenu-item ">
-                  <a href="form-element-input.html">Input</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="form-element-input-group.html">Input Group</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="form-element-select.html">Select</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="form-element-radio.html">Radio</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="form-element-checkbox.html">Checkbox</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="form-element-textarea.html">Textarea</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="sidebar-item  ">
-              <a href="form-layout.html" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#layout"
-                  />
-                </svg>
-                <span>Form Layout</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item  ">
-              <a href="form-editor.html" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#layers"
-                  />
-                </svg>
-                <span>Form Editor</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item  ">
-              <a href="table.html" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#grid"
-                  />
-                </svg>
-                <span>Table</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item  ">
-              <a href="table-datatable.html" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-plus"
-                  />
-                </svg>
-                <span>Datatable</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item  has-sub">
-              <a href="#" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#user"
-                  />
-                </svg>
-                <span>Widgets</span>
-              </a>
-
-              <ul class="submenu ">
-                <li class="submenu-item ">
-                  <a href="ui-chatbox.html">Chatbox</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="ui-pricing.html">Pricing</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="ui-todolist.html">To-do List</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="sidebar-item  has-sub">
-              <a href="#" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#trending-up"
-                  />
-                </svg>
-                <span>Charts</span>
-              </a>
-
-              <ul class="submenu ">
-                <li class="submenu-item ">
-                  <a href="ui-chart-chartjs.html">ChartJS</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="ui-chart-apexchart.html">Apexchart</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="sidebar-item  has-sub">
-              <a href="#" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#user"
-                  />
-                </svg>
-                <span>Authentication</span>
-              </a>
-
-              <ul class="submenu ">
-                <li class="submenu-item ">
-                  <a href="auth-login.html">Login</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="auth-register.html">Register</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="auth-forgot-password.html">Forgot Password</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="sidebar-item  has-sub">
-              <a href="#" class="sidebar-link">
-                <svg class="bi" width="20" height="20" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alert-circle"
-                  />
-                </svg>
-                <span>Errors</span>
-              </a>
-
-              <ul class="submenu ">
-                <li class="submenu-item ">
-                  <a href="error-403.html">403</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="error-404.html">404</a>
-                </li>
-
-                <li class="submenu-item ">
-                  <a href="error-500.html">500</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="main">
-        <div class="page-title">
-          <h3>Input Group</h3>
-          <nav class="breadcrumb-header" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="index.html">Dashboard</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">Alert</li>
-            </ol>
-          </nav>
-        </div>
-        <div class="page-content">
-          <div class="row">
-            <div class="col-12">
-              <div class="card card-shadow">
-                <div class="card-header">
-                  <h5 class="card-title">Input Group</h5>
-                  <p>A default input group style</p>
-                </div>
-                <div class="card-body">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text">prepend</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Prepend only"
-                    />
-                  </div>
-
-                  <div class="input-group mb-3">
-                    <span class="input-group-text">prepend</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Prepend and append"
-                    />
-                    <span class="input-group-text">append</span>
-                  </div>
-
-                  <div class="input-group mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Append only"
-                    />
-                    <span class="input-group-text">append</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">prepend</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Prepend and append"
+            />
+            <span class="input-group-text">append</span>
           </div>
 
-          <div class="row mt-4">
-            <div class="col-12">
-              <div class="card card-shadow">
-                <div class="card-header">
-                  <h5 class="card-title">Input Group Size</h5>
-                  <p>An input group with size</p>
-                </div>
-                <div class="card-body">
-                  <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm"
-                      >Small</span
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      aria-label="Sizing example input"
-                      aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>
-
-                  <div class="input-group mb-3">
-                    <span
-                      class="input-group-text"
-                      id="inputGroup-sizing-default"
-                      >Default</span
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      aria-label="Sizing example input"
-                      aria-describedby="inputGroup-sizing-default"
-                    />
-                  </div>
-
-                  <div class="input-group input-group-lg">
-                    <span class="input-group-text" id="inputGroup-sizing-lg"
-                      >Large</span
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      aria-label="Sizing example input"
-                      aria-describedby="inputGroup-sizing-lg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Append only"
+            />
+            <span class="input-group-text">append</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card card-shadow">
+        <div class="card-header">
+          <h5 class="card-title">Input Group Size</h5>
+          <p>An input group with size</p>
+        </div>
+        <div class="card-body">
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm"
+              >Small</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <span
+              class="input-group-text"
+              id="inputGroup-sizing-default"
+              >Default</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg"
+              >Large</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+        </div>
+    </div>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
+    
     <script src="assets/js/app.js"></script>
-  </body>
+</body>
 </html>
-
