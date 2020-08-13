@@ -1,0 +1,82 @@
+{% extends 'layouts/master.html' %}
+{% set filename = "component-breadcrumb.html" %}
+{% set web_title = "Breadcrumb" %}
+{% block content %}
+
+<div class="page-title">
+    <h3>Breadcrumb</h3>
+    <nav class='breadcrumb-header' aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Badge</li>
+        </ol>
+      </nav>
+</div>
+<div class="page-content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Basic Breadcrumb</h5>
+                    <p>A default breadcrumb with separator.</p>
+                </div>
+                <div class="card-body">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                      </nav>
+                      
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                      </nav>
+                      
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Library</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Right-to-left</h5>
+                    <p>Breadcrumb with RTL (Right-to-left) position. Add <code>.justify-content-end</code> with <code>.breadcumb</code> to work.</p>
+                </div>
+                <div class="card-body">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-end">
+                          <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                      </nav>
+                      
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-end">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                      </nav>
+                      
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-end">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Library</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
