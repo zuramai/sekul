@@ -25,6 +25,20 @@ a {
   height: 4rem;
 }
 
+.badge.badge-sm {
+  padding: 0.2em 0.4em;
+  font-size: 0.75rem;
+}
+
+.badge.badge-lg {
+  padding: 0.5rem 0.95rem;
+}
+
+.badge.badge-xl {
+  padding: 0.7rem 0.7rem;
+  font-size: 1rem;
+}
+
 .breadcrumb-header ol {
   background-color: transparent;
   margin-bottom: 0;
@@ -52,6 +66,10 @@ a {
 
 .card.card-statistic {
   padding: 0.875rem 1rem;
+}
+
+.card.card-statistic .card-body {
+  padding-top: 1.5rem;
 }
 
 .card.card-statistic h5 {

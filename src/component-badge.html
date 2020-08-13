@@ -1,0 +1,90 @@
+{% extends 'layouts/master.html' %}
+{% set filename = "component-badge.html" %}
+{% set web_title = "Badge" %}
+{% block content %}
+
+<div class="page-title">
+    <h3>Badge</h3>
+    <nav class='breadcrumb-header' aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Badge</li>
+        </ol>
+      </nav>
+</div>
+<div class="page-content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Basic Badge</h5>
+                    <p>A default badge style. Use <code>.bg-{color}</code> with <code>.badge</code> to choose color.</p>
+                </div>
+                <div class="card-body">
+                        <div class="badge bg-primary mr-2">Primary</div>
+                        <div class="badge bg-secondary mr-2">Secondary</div>
+                        <div class="badge bg-warning mr-2">Warning</div>
+                        <div class="badge bg-danger mr-2">Danger</div>
+                        <div class="badge bg-success mr-2">Success</div>
+                        <div class="badge bg-light mr-2">Light</div>
+                        <div class="badge bg-dark mr-2">Dark</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Heading</h5>
+                    <p>Badge in heading</p>
+                </div>
+                <div class="card-body">
+                    <h1>Example heading <span class="badge bg-danger">PRO</span></h1>
+                    <h2>Example heading <span class="badge bg-success">New</span></h2>
+                    <h3>Example heading <span class="badge bg-primary">Expert</span></h3>
+                    <h4>Example heading <span class="badge bg-info">Cool</span></h4>
+                    <h5>Example heading <span class="badge bg-warning">Pending</span></h5>
+                    <h6>Example heading <span class="badge bg-secondary">Common</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-2">
+                        <div class="card-header">
+                            <h5 class="card-title">Badge Size</h5>
+                            <p>Customize badge size with <code>.badge-sm</code> | <code>.badge-lg</code> | <code>.badge-xl</code></p>
+                        </div>
+                        <div class="card-body">
+                                <div class="badge badge-sm bg-primary mr-2">Small</div>
+                                <div class="badge bg-success mr-2">Normal</div>
+                                <div class="badge badge-lg bg-danger mr-2">Large</div>
+                                <div class="badge badge-xl bg-info mr-2">Extra Large</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mt-2">
+                        <div class="card-header">
+                            <h5 class="card-title">Rounded Pills</h5>
+                            <p>Create rounded badge with <code>.rounded-pill</code></p>
+                        </div>
+                        <div class="card-body">
+                            <div class="badge rounded-pill bg-primary mr-2">Primary</div>
+                            <div class="badge rounded-pill bg-secondary mr-2">Secondary</div>
+                            <div class="badge rounded-pill bg-warning mr-2">Warning</div>
+                            <div class="badge rounded-pill bg-danger mr-2">Danger</div>
+                            <div class="badge rounded-pill bg-success mr-2">Success</div>
+                            <div class="badge rounded-pill bg-light mr-2">Light</div>
+                            <div class="badge rounded-pill bg-dark mr-2">Dark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

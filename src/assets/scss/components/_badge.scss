@@ -1,0 +1,13 @@
+.badge {
+    &.badge-sm {
+        padding: 0.2em 0.4em;
+        font-size: .75rem;
+    }
+    &.badge-lg {
+        padding: .5rem .95rem;
+    }
+    &.badge-xl {
+        padding: .7rem .7rem;
+        font-size: 1rem;
+    }
+}

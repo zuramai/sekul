@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekul Dashboard</title>
+    <title>Badge</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
@@ -22,7 +22,7 @@
             
             
             
-                <li class="sidebar-item active ">
+                <li class="sidebar-item  ">
                     <a href="index.html" class='sidebar-link'>
                         <svg class="bi" width="20" height="20" fill="currentColor">
                             <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#house-door"/>
@@ -35,7 +35,7 @@
             
             
             
-                <li class="sidebar-item  has-sub">
+                <li class="sidebar-item active has-sub">
                     <a href="#" class='sidebar-link'>
                         <svg class="bi" width="20" height="20" fill="currentColor">
                             <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#triangle"/>
@@ -43,13 +43,13 @@
                         <span>Components</span>
                     </a>
                     
-                    <ul class="submenu ">
+                    <ul class="submenu active">
                         
                         <li class="submenu-item ">
                             <a href="component-alert.html">Alert</a>
                         </li>
                         
-                        <li class="submenu-item ">
+                        <li class="submenu-item active">
                             <a href="component-badge.html">Badge</a>
                         </li>
                         
@@ -354,253 +354,81 @@
             
 
 <div class="page-title">
-    <h3>Dashboard</h3>
+    <h3>Badge</h3>
     <nav class='breadcrumb-header' aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Badge</li>
         </ol>
       </nav>
 </div>
 <div class="page-content">
     <div class="row">
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Rata2 Nilai</h5>
-                            <h1>87,5</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-primary ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bar-chart-line"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                    <h5 class="card-title">Basic Badge</h5>
+                    <p>A default badge style. Use <code>.bg-{color}</code> with <code>.badge</code> to choose color.</p>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
                 <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Tugas Selesai</h5>
-                            <h1>19</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-success ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-check-fill"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Tugas Menunggu</h5>
-                            <h1>5</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-warning ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-text-fill"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3">
-            <div class="card card-shadow card-statistic">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <div class="left">
-                            <h5>Tidak Hadir</h5>
-                            <h1>3</h1>
-                        </div>
-                        <div class="right d-flex align-items-center">
-                            <div class="avatar avatar-icon avatar-xl bg-rgba-danger ">
-                                <svg class="bi" width="30" height="30" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#x"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="badge bg-primary mr-2">Primary</div>
+                        <div class="badge bg-secondary mr-2">Secondary</div>
+                        <div class="badge bg-warning mr-2">Warning</div>
+                        <div class="badge bg-danger mr-2">Danger</div>
+                        <div class="badge bg-success mr-2">Success</div>
+                        <div class="badge bg-light mr-2">Light</div>
+                        <div class="badge bg-dark mr-2">Dark</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row mt-4">
-        <div class="col-md-6 mt-3">
+        <div class="col-12">
             <div class="card card-shadow">
                 <div class="card-header">
-                    <h5 class="card-title">Nilai Rata-Rata</h5>
-                    <p class="card-subtitle">Berikut adalah nilai rata-rata dari mata pelajaran</p>
+                    <h5 class="card-title">Heading</h5>
+                    <p>Badge in heading</p>
                 </div>
                 <div class="card-body">
-                    <div id="average-chart"></div>
+                    <h1>Example heading <span class="badge bg-danger">PRO</span></h1>
+                    <h2>Example heading <span class="badge bg-success">New</span></h2>
+                    <h3>Example heading <span class="badge bg-primary">Expert</span></h3>
+                    <h4>Example heading <span class="badge bg-info">Cool</span></h4>
+                    <h5>Example heading <span class="badge bg-warning">Pending</span></h5>
+                    <h6>Example heading <span class="badge bg-secondary">Common</span></h6>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6 mt-3">
-                    <div class="card card-shadow">
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-2">
                         <div class="card-header">
+                            <h5 class="card-title">Badge Size</h5>
+                            <p>Customize badge size with <code>.badge-sm</code> | <code>.badge-lg</code> | <code>.badge-xl</code></p>
                         </div>
-                        <div class="card-body text-center pb-5">
-                            
-                            <svg class="bi text-primary" width="45" height="45" fill="currentColor">
-                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
-                            </svg>
-                            <h1 class='mt-4 mb-2'>3d 18h 54s</h1>
-                            <h6 class='pb-4'>Sampai ujian berikutnya</h6>
+                        <div class="card-body">
+                                <div class="badge badge-sm bg-primary mr-2">Small</div>
+                                <div class="badge bg-success mr-2">Normal</div>
+                                <div class="badge badge-lg bg-danger mr-2">Large</div>
+                                <div class="badge badge-xl bg-info mr-2">Extra Large</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mt-3">
-                    <div class="card card-shadow">
+                    <div class="col-md-6 col-12 mt-2">
                         <div class="card-header">
-                            <h5 class="card-title ">Todo List</h5>
-                            <p class="card-subtitle ">Hal yang harus kamu kerjakan</p>
+                            <h5 class="card-title">Rounded Pills</h5>
+                            <p>Create rounded badge with <code>.rounded-pill</code></p>
                         </div>
-                        <div class="card-body p-0">
-                            <table class="table table-striped mb-0">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>Tugas</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class='text-center'>
-                                            <svg class="bi text-muted" width="20" height="20" fill="currentColor">
-                                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
-                                            </svg>
-                                        </td>
-                                        <td>Tugas MTK</td>
-                                        <td>
-                                            <span class="avatar avatar-icon bg-rgba-success ">
-                                                <svg class="bi" width="16" height="16" fill="currentColor">
-                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class='text-center'>
-                                            <svg class="bi text-muted" width="20" height="20" fill="currentColor">
-                                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
-                                            </svg>
-                                        </td>
-                                        <td>Praktek Agama</td>
-                                        <td>
-                                            <span class="avatar avatar-icon bg-rgba-primary ">
-                                                <svg class="bi" width="16" height="16" fill="currentColor">
-                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bullseye"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class='text-center'>
-                                            <svg class="bi text-muted" width="20" height="20" fill="currentColor">
-                                                <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-expand"/>
-                                            </svg>
-                                        </td>
-                                        <td>Kerjain B.Indo</td>
-                                        <td>
-                                            <span class="avatar avatar-icon bg-rgba-primary ">
-                                                <svg class="bi" width="16" height="16" fill="currentColor">
-                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bullseye"/>
-                                                </svg>
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 mt-2">
-                    <div class="card card-shadow">
-                        <div class="card-header">
-                            <h5 class="card-title">Incoming Exam</h5>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="table-responsive">
-                                <table class="table table-hover mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th class='text-center'>#</th>
-                                            <th>Nama</th>
-                                            <th>Materi</th>
-                                            <th>Sisa Waktu</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class='text-center'>1</td>
-                                            <td>Matematika</td>
-                                            <td>Aljabar</td>
-                                            <td class='text-danger'>
-                                                <svg class="bi text-danger mr-2" width="16" height="16" fill="currentColor">
-                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
-                                                </svg>
-                                                2jam 15menit
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class='text-center'>2</td>
-                                            <td>Bahasa Indonesia</td>
-                                            <td>Puisi</td>
-                                            <td >
-                                                <svg class="bi text-primary mr-2" width="16" height="16" fill="currentColor">
-                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
-                                                </svg>
-                                                1hari 8jam 10menit
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class='text-center'>3</td>
-                                            <td>Bahasa Inggris</td>
-                                            <td>Adjective</td>
-                                            <td >
-                                                <svg class="bi text-primary mr-2" width="16" height="16" fill="currentColor">
-                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
-                                                </svg>
-                                                3hari 2jam 5menit
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class='text-center'>3</td>
-                                            <td>Fisika</td>
-                                            <td>Hukum Newton</td>
-                                            <td >
-                                                <svg class="bi text-primary mr-2" width="16" height="16" fill="currentColor">
-                                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#alarm"/>
-                                                </svg>
-                                                5hari 2jam 15menit
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="card-body">
+                            <div class="badge rounded-pill bg-primary mr-2">Primary</div>
+                            <div class="badge rounded-pill bg-secondary mr-2">Secondary</div>
+                            <div class="badge rounded-pill bg-warning mr-2">Warning</div>
+                            <div class="badge rounded-pill bg-danger mr-2">Danger</div>
+                            <div class="badge rounded-pill bg-success mr-2">Success</div>
+                            <div class="badge rounded-pill bg-light mr-2">Light</div>
+                            <div class="badge rounded-pill bg-dark mr-2">Dark</div>
                         </div>
                     </div>
                 </div>
@@ -615,11 +443,6 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     
-
-<script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
-<script src="assets/js/pages/dashboard.js"></script>
-
-
     <script src="assets/js/app.js"></script>
 </body>
 </html>

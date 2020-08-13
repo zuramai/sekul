@@ -19,6 +19,9 @@
 
     &.card-statistic {
         padding: .875rem 1rem;
+        .card-body {
+            padding-top: 1.5rem;
+        }
         h5 {
             font-weight: 500;
             color: #474747
