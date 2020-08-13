@@ -1,0 +1,112 @@
+{% extends 'layouts/master.html' %} 
+{% set filename = "component-breadcrumb.html" %} 
+{% set web_title = "Breadcrumb" %} 
+{% block content %}
+
+<div class="page-title">
+  <h3>Input Group</h3>
+  <nav class="breadcrumb-header" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Dashboard</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Alert</li>
+    </ol>
+  </nav>
+</div>
+<div class="page-content">
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-shadow">
+        <div class="card-header">
+          <h5 class="card-title">Input Group</h5>
+          <p>A default input group style</p>
+        </div>
+        <div class="card-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text">prepend</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Prepend only"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">prepend</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Prepend and append"
+            />
+            <span class="input-group-text">append</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Append only"
+            />
+            <span class="input-group-text">append</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card card-shadow">
+        <div class="card-header">
+          <h5 class="card-title">Input Group Size</h5>
+          <p>An input group with size</p>
+        </div>
+        <div class="card-body">
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm"
+              >Small</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <span
+              class="input-group-text"
+              id="inputGroup-sizing-default"
+              >Default</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg"
+              >Large</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock %}
+

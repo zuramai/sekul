@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerts</title>
+    <title>Breadcrumb</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
@@ -45,7 +45,7 @@
                     
                     <ul class="submenu active">
                         
-                        <li class="submenu-item active">
+                        <li class="submenu-item ">
                             <a href="component-alert.html">Alert</a>
                         </li>
                         
@@ -53,7 +53,7 @@
                             <a href="component-badge.html">Badge</a>
                         </li>
                         
-                        <li class="submenu-item ">
+                        <li class="submenu-item active">
                             <a href="component-breadcrumb.html">Breadcrumb</a>
                         </li>
                         
@@ -354,10 +354,12 @@
             
 
 <div class="page-title">
-  <h3>Alerts</h3>
+  <h3>Input Group</h3>
   <nav class="breadcrumb-header" aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+      <li class="breadcrumb-item">
+        <a href="index.html">Dashboard</a>
+      </li>
       <li class="breadcrumb-item active" aria-current="page">Alert</li>
     </ol>
   </nav>
@@ -367,158 +369,93 @@
     <div class="col-12">
       <div class="card card-shadow">
         <div class="card-header">
-          <h5 class="card-title">Basic Alert</h5>
-          <p>A default alert style</p>
+          <h5 class="card-title">Input Group</h5>
+          <p>A default input group style</p>
         </div>
         <div class="card-body">
-          <div class="alert alert-primary" role="alert">
-            A simple primary alert—check it out!
+          <div class="input-group mb-3">
+            <span class="input-group-text">prepend</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Prepend only"
+            />
           </div>
-          <div class="alert alert-secondary" role="alert">
-            A simple secondary alert—check it out!
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">prepend</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Prepend and append"
+            />
+            <span class="input-group-text">append</span>
           </div>
-          <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-          </div>
-          <div class="alert alert-danger" role="alert">
-            A simple danger alert—check it out!
-          </div>
-          <div class="alert alert-warning" role="alert">
-            A simple warning alert—check it out!
-          </div>
-          <div class="alert alert-info" role="alert">
-            A simple info alert—check it out!
-          </div>
-          <div class="alert alert-light" role="alert">
-            A simple light alert—check it out!
-          </div>
-          <div class="alert alert-dark" role="alert">
-            A simple dark alert—check it out!
+
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Append only"
+            />
+            <span class="input-group-text">append</span>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <div class="row mt-4">
     <div class="col-12">
       <div class="card card-shadow">
         <div class="card-header">
-          <h5 class="card-title">Light Alert</h5>
-          <p>An alert with light colors</p>
+          <h5 class="card-title">Input Group Size</h5>
+          <p>An input group with size</p>
         </div>
         <div class="card-body">
-          <div class="alert alert-light-primary" role="alert">
-            A simple light primary alert—check it out!
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm"
+              >Small</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
           </div>
-          <div class="alert alert-light-secondary" role="alert">
-            A simple light secondary alert—check it out!
+
+          <div class="input-group mb-3">
+            <span
+              class="input-group-text"
+              id="inputGroup-sizing-default"
+              >Default</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
           </div>
-          <div class="alert alert-light-success" role="alert">
-            A simple light success alert—check it out!
-          </div>
-          <div class="alert alert-light-danger" role="alert">
-            A simple light danger alert—check it out!
-          </div>
-          <div class="alert alert-light-warning" role="alert">
-            A simple light warning alert—check it out!
-          </div>
-          <div class="alert alert-light-info" role="alert">
-            A simple light info alert—check it out!
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-12">
-      <div class="card card-shadow">
-        <div class="row">
-          <div class="col-md-6 col-12 mt-2">
-            <div class="card-header">
-              <h5 class="card-title">Alert With Icon</h5>
-              <p>An alert with light colors</p>
-            </div>
-            <div class="card-body">
-              <div class="alert alert-light-primary" role="alert">
-                <svg class="bi" width="16" height="16" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"
-                  />
-                </svg>
-                A simple primary alert—check it out!
-              </div>
-              <div class="alert alert-light-secondary" role="alert">
-                <svg class="bi" width="16" height="16" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"
-                  />
-                </svg>
-                A simple secondary alert—check it out!
-              </div>
-              <div class="alert alert-light-success" role="alert">
-                <svg class="bi" width="16" height="16" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"
-                  />
-                </svg>
-                A simple success alert—check it out!
-              </div>
-              <div class="alert alert-light-danger" role="alert">
-                <svg class="bi" width="16" height="16" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"
-                  />
-                </svg>
-                A simple danger alert—check it out!
-              </div>
-              <div class="alert alert-light-warning" role="alert">
-                <svg class="bi" width="16" height="16" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"
-                  />
-                </svg>
-                A simple warning alert—check it out!
-              </div>
-              <div class="alert alert-light-info" role="alert">
-                <svg class="bi" width="16" height="16" fill="currentColor">
-                  <use
-                    xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"
-                  />
-                </svg>
-                A simple info alert—check it out!
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 mt-2">
-            <div class="card-header">
-              <h5 class="card-title">Alert With Title</h5>
-              <p>An alert with light colors</p>
-            </div>
-            <div class="card-body">
-              <div class="alert alert-light-primary" role="alert">
-                <h4 class="alert-heading">Well done!</h4>
-                <p>
-                  Aww yeah, you successfully read this important alert message.
-                  This example text is going to run a bit longer so that you can
-                  see how spacing within an alert works with this kind of
-                  content.
-                </p>
-              </div>
-              <div class="alert alert-light-success" role="alert">
-                <h4 class="alert-heading">Congratulations!</h4>
-                <p>
-                  Congratulations for completed your exam! you successfully read
-                  this important alert message. This example text is going to
-                  run a bit longer so that you can see how spacing within an
-                  alert works with this kind of content.
-                </p>
-              </div>
-            </div>
+
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg"
+              >Large</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 </div>
 
 
