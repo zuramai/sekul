@@ -1,0 +1,15 @@
+.btn {
+    &[class*="btn-outline"] {
+        border-width: 1px;
+    }
+    &.btn-rounded {
+        border-radius: $rounded-pill;
+    }
+    &.btn-icon {
+        svg, i {
+            font-size: 1rem;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}

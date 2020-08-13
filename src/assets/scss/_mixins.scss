@@ -1,0 +1,11 @@
+@mixin light-component($component, $color) {
+    color: map-get(map-get($light-colors, $color), 'color'); 
+    background-color: map-get(map-get($light-colors, $color), 'background-color');;
+
+    @if $component == 'button' {
+        &:hover {
+            background: map-get(map-get($light-colors, $color), 'hover-background');
+            color: map-get(map-get($light-colors, $color), 'hover-color');
+        }
+    }
+}

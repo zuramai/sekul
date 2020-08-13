@@ -39,6 +39,21 @@ a {
   font-size: 1rem;
 }
 
+.btn[class*=btn-outline] {
+  border-width: 1px;
+}
+
+.btn.btn-rounded {
+  border-radius: 50rem;
+}
+
+.btn.btn-icon svg,
+.btn.btn-icon i {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
 .breadcrumb-header ol {
   background-color: transparent;
   margin-bottom: 0;

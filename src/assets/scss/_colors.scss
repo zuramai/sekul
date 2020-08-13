@@ -15,6 +15,45 @@
 .text-gray-700 { color: $gray-700 }
 .text-gray-800 { color: $gray-800 }
 
+$light-colors: (
+    primary: ( 
+        color: $blue-600, 
+        background-color: rgba($blue-200, .3),
+        hover-background: $primary,
+        hover-color: $white
+    ),
+    secondary: ( 
+        color: $gray-700, 
+        background-color: rgba($gray-400, .3),
+        hover-background: $secondary,
+        hover-color: $white
+    ),
+    success: ( 
+        color: $green-700, 
+        background-color: rgba($green-200, .3),
+        hover-background: $success,
+        hover-color: $white
+    ),
+    danger: ( 
+        color: $red-700, 
+        background-color: rgba($red-200, .3),
+        hover-background: $danger,
+        hover-color: $white
+    ),
+    warning: ( 
+        color: $yellow-700, 
+        background-color: rgba($yellow-200, .3),
+        hover-background: $warning,
+        hover-color: $white
+    ),
+    info: ( 
+        color: $blue-600, 
+        background-color: rgba($blue-200, .1), 
+        hover-background: $info,
+        hover-color: $white
+    ),
+);
+
 .bg-rgba-primary { background:rgba(90,141,238,.2) !important }
 .bg-rgba-danger { background:rgba(255,91,92,.2) !important }
 .bg-rgba-warning { background: rgba($yellow-400, .2) !important }
@@ -27,19 +66,35 @@
     &.bg-rgba-primary { color: $blue-400 }
 }
 .alert {
+    &.alert-primary { color: $white; background-color: #5A8DEE ; box-shadow: rgba(90,141,238,.4); }
+    &.alert-secondary { color: $white; background-color: $gray-500; box-shadow: 1px 2px 10px rgba(lighten($gray-400, .5), .6); }
+    &.alert-success { color: $white; background-color: #39da8a; box-shadow: 1px 2px 10px rgba($green-100, .2); }
+    &.alert-danger { color: $white; background-color: $red-400; box-shadow: 1px 2px 10px rgba($red-100, .2); }
+    &.alert-warning { color: $white; background-color: $yellow-500; box-shadow: 1px 2px 10px rgba($yellow-100, .2); }
+    &.alert-info { color: $white; background-color: #00CFDD; box-shadow: 0 3px 8px 0 rgba(0,207,221,.4); }
+    &.alert-light { color: $gray-600; background-color: $gray-200;  }
+    &.alert-dark { color: $white; background-color: lighten($black, 40%); box-shadow: 0 3px 8px $gray-300; }
+
+    // Alert Light Style
     &.alert-light-primary { color: $blue-600; background-color: rgba($blue-200, .3); }
     &.alert-light-secondary { color: $gray-700; background-color: rgba($gray-400, .3); }
     &.alert-light-success { color: $green-700; background-color: rgba($green-200, .3); }
     &.alert-light-danger { color: $red-700; background-color: rgba($red-200, .3); }
     &.alert-light-warning { color: $yellow-700; background-color: rgba($yellow-200, .3); }
     &.alert-light-info { color: $blue-600; background-color: rgba($blue-200, .1); }
+
 }
 
-.alert-primary { color: $white; background-color: #5A8DEE ; box-shadow: rgba(90,141,238,.4); }
-.alert-secondary { color: $white; background-color: $gray-500; box-shadow: 1px 2px 10px rgba(lighten($gray-400, .5), .6); }
-.alert-success { color: $white; background-color: #39da8a; box-shadow: 1px 2px 10px rgba($green-100, .2); }
-.alert-danger { color: $white; background-color: $red-400; box-shadow: 1px 2px 10px rgba($red-100, .2); }
-.alert-warning { color: $white; background-color: $yellow-500; box-shadow: 1px 2px 10px rgba($yellow-100, .2); }
-.alert-info { color: $white; background-color: #00CFDD; box-shadow: 0 3px 8px 0 rgba(0,207,221,.4); }
-.alert-light { color: $gray-600; background-color: $gray-200;  }
-.alert-dark { color: $white; background-color: lighten($black, 40%); box-shadow: 0 3px 8px $gray-300; }
+.btn {
+    &.btn-light { background-color: #A3AFBD; color: #fff; }
+    &.btn-secondary { background-color: #506B8B; }
+    &.btn-dark { background-color: #263342; }
+
+    // Button Light Style
+    &.btn-light-primary { @include light-component('button', 'primary') }
+    &.btn-light-secondary { @include light-component('button', 'secondary') }
+    &.btn-light-success { @include light-component('button', 'success') }
+    &.btn-light-danger { @include light-component('button', 'danger') }
+    &.btn-light-warning { @include light-component('button', 'warning') }
+    &.btn-light-info { @include light-component('button', 'info') }
+}
