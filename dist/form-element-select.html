@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Group</title>
+    <title>Select</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
@@ -150,11 +150,11 @@
                             <a href="form-element-input.html">Input</a>
                         </li>
                         
-                        <li class="submenu-item active">
+                        <li class="submenu-item ">
                             <a href="form-element-input-group.html">Input Group</a>
                         </li>
                         
-                        <li class="submenu-item ">
+                        <li class="submenu-item active">
                             <a href="form-element-select.html">Select</a>
                         </li>
                         
@@ -353,9 +353,8 @@
         <div id="main">
             
 
-
 <div class="page-title">
-  <h3>Input Group</h3>
+  <h3>Input</h3>
   <nav class="breadcrumb-header" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
@@ -370,36 +369,43 @@
     <div class="col-12">
       <div class="card card-shadow">
         <div class="card-header">
-          <h5 class="card-title">Input Group</h5>
-          <p>A default input group style</p>
+          <h5 class="card-title">Select</h5>
+          <p>A default select style</p>
         </div>
         <div class="card-body">
-          <div class="input-group mb-3">
-            <span class="input-group-text">prepend</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Prepend only"
-            />
+          <div class="">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Default select example</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
 
-          <div class="input-group mb-3">
-            <span class="input-group-text">prepend</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Prepend and append"
-            />
-            <span class="input-group-text">append</span>
+          <div class="mt-4">
+            <select
+              class="form-select"
+              multiple
+              multiple-aria-label="Multiple select example"
+            >
+              <option selected>Multiple select example</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
 
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Append only"
-            />
-            <span class="input-group-text">append</span>
+          <div class="mt-4">
+            <select
+              class="form-select"
+              size="3"
+              multiple-aria-label="Select with size example"
+            >
+              <option selected>Select with size example</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
         </div>
       </div>
@@ -410,53 +416,46 @@
     <div class="col-12">
       <div class="card card-shadow">
         <div class="card-header">
-          <h5 class="card-title">Input Group Size</h5>
-          <p>An input group with size</p>
+          <h5 class="card-title">Select Size</h5>
+          <p>An select with size</p>
         </div>
         <div class="card-body">
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-sm"
-              >Small</span
+          <div class="">
+            <select
+              class="form-select form-select-sm"
+              aria-label=".form-select"
             >
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm"
-            />
+              <option selected>Small</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
 
-          <div class="input-group mb-3">
-            <span
-              class="input-group-text"
-              id="inputGroup-sizing-default"
-              >Default</span
-            >
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-default"
-            />
+          <div class="mt-4">
+            <select class="form-select" aria-label=".form-select">
+              <option selected>Normal</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
 
-          <div class="input-group input-group-lg">
-            <span class="input-group-text" id="inputGroup-sizing-lg"
-              >Large</span
+          <div class="mt-4">
+            <select
+              class="form-select form-select-lg"
+              aria-label=".form-select-lg"
             >
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-lg"
-            />
+              <option selected>Large</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>
 
 
