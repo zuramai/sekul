@@ -1,0 +1,137 @@
+{% extends 'layouts/master.html' %} {% set filename = "form-element-radio.html"
+%} {% set web_title = "Radio" %} {% block content %}
+
+<div class="page-title">
+  <h3>Radio</h3>
+  <nav class="breadcrumb-header" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Dashboard</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Radio</li>
+    </ol>
+  </nav>
+</div>
+<div class="page-content">
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-shadow">
+        <div class="card-header">
+          <h5 class="card-title">Basic Radio</h5>
+          <p>A default radio style</p>
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="radio">
+              <input
+                name="example"
+                type="radio"
+                class="form-check-input"
+                checked=""
+              />
+              <label>Active</label>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <div class="mt-3">
+              <div class="radio">
+                <input name="example" type="radio" class="form-check-input" />
+                <label>Inactive</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+    
+            <div class="radio">
+              <input
+                name="example2"
+                type="radio"
+                class="form-check-input"
+                disabled
+                checked
+              />
+              <label>Active Disabled</label>
+            </div>
+     
+          </div>
+
+          <div class="mt-3">
+      
+            <div class="radio">
+              <input
+                name="example2"
+                type="radio"
+                class="form-check-input"
+                disabled
+              />
+              <label>Inactive Disabled</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+        <div class="card card-shadow">
+            <div class="card-header">
+            <h5 class="card-title">Custom Radio Button</h5>
+            <p>A radio button with custom style</p>
+            </div>
+            <div class="card-body">
+            <div class="">
+                <div>
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-primary" name="coloredRadio">
+                        <label>Primary</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-success" name="coloredRadio">
+                        <label>Success</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-info" name="coloredRadio">
+                        <label>Info</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-warning" name="coloredRadio">
+                        <label>Warning</label>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-secondary" name="coloredRadio">
+                        <label>Secondary</label>
+                    </div>
+                </div>
+
+
+                <div class="mt-3">
+                    <div class="radio">
+                        <input type="radio" class="form-check-input bg-danger" name="coloredRadio">
+                        <label>Danger</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
