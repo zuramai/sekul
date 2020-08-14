@@ -48,6 +48,8 @@ mix.browserSync({
     watch: true,
     files: ["dist/**/*.html","dist/**/*.css"]
 });
+
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
