@@ -2,6 +2,10 @@ a {
   text-decoration: none;
 }
 
+.resize-none {
+  resize: none;
+}
+
 .alert {
   border: none;
 }
