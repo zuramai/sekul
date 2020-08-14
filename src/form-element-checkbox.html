@@ -1,0 +1,179 @@
+{% extends 'layouts/master.html' %} {% set filename = "form-element-checkbox.html"
+%} {% set web_title = "Checkbox" %} {% block content %}
+
+<div class="page-title">
+  <h3>Checkbox</h3>
+  <nav class="breadcrumb-header" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Dashboard</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Checkbox</li>
+    </ol>
+  </nav>
+</div>
+<div class="page-content">
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-shadow">
+        <div class="card-header">
+          <h5 class="card-title">Basic Checkbox</h5>
+          <p>A default checkbox style</p>
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Disabled checkbox
+                </label>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked disabled>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Disabled checked checkbox
+                </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                <h5 class="card-title">Custom Checkbox</h5>
+                <p>A checkbox with custom style</p>
+                </div>
+                <div class="card-body">
+                    <div class="">
+
+                        <div class="mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input bg-primary" id="defaultCheck1" type="checkbox" value="">
+                                <label class="form-check-label">
+                                Primary checbox
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input bg-success" id="defaultCheck2" type="checkbox" value="">
+                                <label class="form-check-label">
+                                Success checbox
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input bg-danger" id="defaultCheck3" type="checkbox" value="">
+                                <label class="form-check-label">
+                                Danger checbox
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input bg-warning" id="defaultCheck4" type="checkbox" value="">
+                                <label class="form-check-label">
+                                Warning checbox
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input bg-info" id="defaultCheck5" type="checkbox" value="">
+                                <label class="form-check-label">
+                                Info checbox
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input bg-secondary" id="defaultCheck6" type="checkbox" value="">
+                                <label class="form-check-label">
+                                Secondary checbox
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card card-shadow">
+                <div class="card-header">
+                <h5 class="card-title">Switches</h5>
+                <p>A switch has the markup of a custom checkbox</p>
+                </div>
+                <div class="card-body">
+                    <div class="">
+                        <div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}

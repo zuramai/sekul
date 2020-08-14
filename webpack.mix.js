@@ -1,6 +1,6 @@
-let mix = require('laravel-mix');
-require('laravel-mix-nunjucks')
-let sidebarItems = require('./sidebar-items.json');
+let mix = require("laravel-mix");
+require("laravel-mix-nunjucks");
+let sidebarItems = require("./sidebar-items.json");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -12,9 +12,10 @@ let sidebarItems = require('./sidebar-items.json');
  |
  */
 
-mix.js('src/assets/js/app.js', 'dist/assets/js')
-    .sass('src/assets/scss/bootstrap.scss', 'dist/assets/vendors/bootstrap')
-    .sass('src/assets/scss/app.scss', 'dist/assets/css');
+mix
+  .js("src/assets/js/app.js", "dist/assets/js")
+  .sass("src/assets/scss/bootstrap.scss", "dist/assets/vendors/bootstrap")
+  .sass("src/assets/scss/app.scss", "dist/assets/css");
 
 // mix.ejs('src/', 'dist/', {}, {
 //     rmWhitespace: true,
@@ -22,33 +23,25 @@ mix.js('src/assets/js/app.js', 'dist/assets/js')
 //     partials: 'src/partials'
 // });
 
-
-mix.njk('src/', 'dist/', {
+mix.njk("src/", "dist/", {
+  watch: true,
+  data: {
+    web_title: "Sekul Dashboard",
+    sidebarItems,
+  },
+  block: "content",
+  // marked: null,
+  envOptions: {
     watch: true,
-    data: {
-       web_title: "Sekul Dashboard",
-       sidebarItems
-    },
-    block: 'content',
-    // marked: null,
-    envOptions: {
-       watch: true,
-       noCache: true
-    },
-    manageEnv: (nunjucks) => {
-       nunjucks.addFilter('containString', function(str, containStr) {
-          if(str == undefined) return false;
-          return str.indexOf(containStr) >= 0
-       })
-    },
- })
-
-mix.browserSync({
-    proxy: 'sekul.test',
-    watch: true,
-    files: ["dist/**/*.html","dist/**/*.css"]
+    noCache: true,
+  },
+  manageEnv: (nunjucks) => {
+    nunjucks.addFilter("containString", function(str, containStr) {
+      if (str == undefined) return false;
+      return str.indexOf(containStr) >= 0;
+    });
+  },
 });
-
 
 // Full API
 // mix.js(src, output);
