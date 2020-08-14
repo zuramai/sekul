@@ -1,0 +1,68 @@
+{% extends 'layouts/master.html' %}
+{% set filename = "form-element-textarea.html"
+%}
+{% set web_title = "Textarea" %}
+{% block content %}
+
+    <div class="page-title">
+        <h3>Textarea</h3>
+        <nav class="breadcrumb-header" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Textarea</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="page-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-shadow">
+                    <div class="card-header">
+                        <h5 class="card-title">Textarea</h5>
+                        <p>A default textarea style</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="">
+                            <label for="validationTextarea" class="form-label"></label>
+                            <textarea class="form-control" placeholder="Default Textarea" required="required"></textarea>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="validationTextarea" class="form-label"></label>
+                            <textarea class="form-control resize-none" placeholder="Unresizeable textarea" required="required"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card card-shadow">
+                    <div class="card-header">
+                        <h5 class="card-title">Validation Textarea</h5>
+                        <p>A textarea with validation style</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="">
+                            <label for="validationTextarea" class="form-label"></label>
+                            <textarea class="form-control is-valid" placeholder="Valid Textarea" required="required"></textarea>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="validationTextarea" class="form-label"></label>
+                            <textarea class="form-control is-invalid" placeholder="Unresizeable textarea" required="required"></textarea>
+                            <div class="invalid-feedback">
+                                Please enter a message in the textarea.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
