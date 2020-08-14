@@ -87,6 +87,54 @@
       ]
     },
     {
+      "name": "Apps",
+      "isTitle": true
+    },
+    {
+      "name": "CRUD Example",
+      "key": "special-pages",
+      "icon": "card-heading",
+      "url": "apps-crud.html"
+    },
+    {
+      "name": "Chat App",
+      "key": "chat-app",
+      "icon": "chat-dots-fill",
+      "url": "apps-chat.html"
+
+    },
+    {
+      "name": "Email",
+      "key": "special-pages",
+      "icon": "envelope",
+      "url": "apps-mail.html"
+    },
+    {
+      "name": "User Profile",
+      "key": "user-profile",
+      "icon": "person-badge",
+      "url": "apps-user-profile.html"
+    },
+    {
+      "name": "Exam App",
+      "key": "apps-exam",
+      "icon": "file-earmark-ruled",
+      "submenu": [
+        {
+          "name": "Student Login",
+          "url": "apps-exam-login.html"
+        },
+        {
+          "name": "Student Exam Working",
+          "url": "apps-exam-working.html"
+        },
+        {
+          "name": "Admin Monitoring",
+          "url": "apps-exam-admin-monitoring.html"
+        }
+      ]
+    },
+    {
       "name": "Forms & Tables",
       "isTitle": true
     },
@@ -124,7 +172,7 @@
     {
       "name": "Form Layout",
       "url": "form-layout.html",
-      "icon": "layout"
+      "icon": "files"
     },
     {
       "name": "Form Editor",
@@ -148,7 +196,7 @@
     {
       "name": "Widgets",
       "key": "ui",
-      "icon": "user",
+      "icon": "exclude",
       "submenu": [
         {
           "name": "Chatbox",
@@ -167,7 +215,7 @@
     {
       "name": "Charts",
       "key": "ui-chart",
-      "icon": "trending-up",
+      "icon": "bar-chart-fill",
       "submenu": [
         {
           "name": "ChartJS",
@@ -180,13 +228,19 @@
       ]
     },
     {
+      "name": "Google Maps",
+      "key": "ui-globe",
+      "icon": "globe",
+      "url": "ui-google-maps.html"
+    },
+    {
       "name": "Pages",
       "isTitle": true
     },
     {
       "name": "Authentication",
       "key": "auth",
-      "icon": "user",
+      "icon": "person",
       "submenu": [
         {
           "name": "Login",
@@ -205,7 +259,7 @@
     {
       "name": "Errors",
       "key": "error",
-      "icon": "alert-circle",
+      "icon": "x",
       "submenu": [
         {
           "name": "403",
@@ -218,6 +272,35 @@
         {
           "name": "500",
           "url": "error-500.html"
+        }
+      ]
+    },
+    {
+      "name": "Disabled Menu",
+      "disabled": true,
+      "icon": "eye-slash-fill"
+    },
+    {
+      "name": "Menu Levels",
+      "icon": "menu-button",
+      "submenu": [
+        {
+          "name": "Second Level",
+          "url": "#"
+        },
+        {
+          "name": "Second Level",
+          "url": "#",
+          "sub-submenu": [
+            {
+              "name": "Third Level",
+              "url": "#"
+            },
+            {
+              "name": "Third Level",
+              "url": "#"
+            }
+          ]
         }
       ]
     }

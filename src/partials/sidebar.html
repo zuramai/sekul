@@ -6,6 +6,9 @@
         <ul class="sidebar-menu">
             {% for sidebarItem in sidebarItems %}
             {% if sidebarItem.isTitle %}
+            <li class="sidebar-title">
+                <span>{{sidebarItem.name}}</span>
+            </li>
             {% else %}
                 <li class="sidebar-item {{ 'active' if (sidebarItem.url == filename or filename|containString(sidebarItem.key)) }} {{'has-sub' if sidebarItem.submenu.length > 0 }}">
                     <a href="{{sidebarItem.url if sidebarItem.url!==undefined else '#'}}" class='sidebar-link'>
@@ -27,7 +30,14 @@
 
             {% endif %}
             {% endfor %}
-         
+            <div class="px-4 mt-4 mb-5">
+                <a href="http://" class='btn btn-outline-primary btn-block'>
+                    <svg class="bi" width="20" height="20" fill="currentColor">
+                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-medical"/>
+                      </svg>
+                    Documentation
+                </a>
+            </div>
         </ul>
     </div>
 </div>

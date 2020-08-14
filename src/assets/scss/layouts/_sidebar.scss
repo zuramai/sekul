@@ -18,9 +18,10 @@
         margin: 0;
 
         .sidebar-title {
-            font-size: $spacer * 1.2;
-            font-weight: bold;
-            color: #434343;
+            margin-top: 1.5rem;
+            font-size: $spacer * 1.1;
+            font-weight: 600;
+            color: #4c4e5a;
             padding: 0 2rem 1rem;
         }
     }
@@ -32,11 +33,11 @@
 
         &.active {
             & > a {
-                color: #3d4d75;
+                color: $blue-500;
                 font-weight: bold;
 
                 svg {
-                    color: #1C08DA
+                    color: $blue-500
                 }
             }
         }

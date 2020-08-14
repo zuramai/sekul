@@ -142,9 +142,9 @@ for (var i = 0; i < sidebarItems.length; i++) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! B:\sekul\src\assets\js\app.js */"./src/assets/js/app.js");
-__webpack_require__(/*! B:\sekul\src\assets\scss\bootstrap.scss */"./src/assets/scss/bootstrap.scss");
-module.exports = __webpack_require__(/*! B:\sekul\src\assets\scss\app.scss */"./src/assets/scss/app.scss");
+__webpack_require__(/*! C:\laragon\www\sekul\src\assets\js\app.js */"./src/assets/js/app.js");
+__webpack_require__(/*! C:\laragon\www\sekul\src\assets\scss\bootstrap.scss */"./src/assets/scss/bootstrap.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\sekul\src\assets\scss\app.scss */"./src/assets/scss/app.scss");
 
 
 /***/ })
