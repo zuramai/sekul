@@ -5,4 +5,12 @@
     & > :not(:last-child) > :last-child > * {
         border-bottom-color: $gray-400;
     }
+    
+}
+.dataTable-table {
+    @extend .table
+}
+
+.dataTable-container {
+    overflow-x:auto
 }

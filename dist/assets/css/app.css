@@ -96,12 +96,320 @@ a {
   color: #474747;
 }
 
-.table th {
+.form-group {
+  margin-bottom: 0.7rem;
+}
+
+.form-group label {
+  font-size: 0.755rem;
+  text-transform: uppercase;
+  color: rgba(35, 28, 99, 0.7);
+  font-weight: 500;
+}
+
+.form-group small {
+  font-size: 0.7rem;
+}
+
+.form-group.with-title {
+  position: relative;
+}
+
+.form-group.with-title label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 0.6rem;
+  background-color: #e9ecef;
+  width: 100%;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group.with-title .form-control,
+.form-group.with-title dataTable-input {
+  padding-top: 2rem;
+}
+
+.form-group.with-title .form-control:focus ~ label,
+.form-group.with-title dataTable-input:focus ~ label {
+  border-left: 1px solid #5A8DEE;
+  border-top: 1px solid #5A8DEE;
+  border-right: 1px solid #5A8DEE;
+}
+
+.form-group[class*=has-icon-].has-icon-left .form-control {
+  padding-left: 2.5rem;
+}
+
+.form-group[class*=has-icon-].has-icon-left .form-control-icon {
+  left: 0;
+}
+
+.form-group[class*=has-icon-].has-icon-right .form-control {
+  padding-right: 2.5rem;
+}
+
+.form-group[class*=has-icon-].has-icon-right .form-control-icon {
+  right: 0;
+}
+
+.form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon i,
+.form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon svg {
+  color: #5A8DEE;
+}
+
+.form-group[class*=has-icon-] .form-control-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 0.6rem;
+}
+
+.form-group[class*=has-icon-] .form-control-icon i,
+.form-group[class*=has-icon-] .form-control-icon svg {
+  width: 1.2rem;
+}
+
+.form-check .form-check-input[class*=bg-] {
+  border: 0;
+}
+
+.form-check .form-check-input:focus {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-primary {
+  background-color: #5A8DEE;
+  border-color: #5A8DEE;
+}
+
+.form-check .form-check-input.form-check-primary:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-primary.form-check-glow {
+  box-shadow: 0 0 5px #5A8DEE;
+}
+
+.form-check .form-check-input.form-check-primary.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-secondary {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.form-check .form-check-input.form-check-secondary:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-secondary.form-check-glow {
+  box-shadow: 0 0 5px #adb5bd;
+}
+
+.form-check .form-check-input.form-check-secondary.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-success {
+  background-color: #39da8a;
+  border-color: #39da8a;
+}
+
+.form-check .form-check-input.form-check-success:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-success.form-check-glow {
+  box-shadow: 0 0 5px #39da8a;
+}
+
+.form-check .form-check-input.form-check-success.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-info {
+  background-color: #00CFDD;
+  border-color: #00CFDD;
+}
+
+.form-check .form-check-input.form-check-info:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-info.form-check-glow {
+  box-shadow: 0 0 5px #00CFDD;
+}
+
+.form-check .form-check-input.form-check-info.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.form-check .form-check-input.form-check-warning:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-warning.form-check-glow {
+  box-shadow: 0 0 5px #ffc107;
+}
+
+.form-check .form-check-input.form-check-warning.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-danger {
+  background-color: tint-color(#dc3545, 2);
+  border-color: tint-color(#dc3545, 2);
+}
+
+.form-check .form-check-input.form-check-danger:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-danger.form-check-glow {
+  box-shadow: 0 0 5px tint-color(#dc3545, 2);
+}
+
+.form-check .form-check-input.form-check-danger.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-light {
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+}
+
+.form-check .form-check-input.form-check-light:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-light.form-check-glow {
+  box-shadow: 0 0 5px #e9ecef;
+}
+
+.form-check .form-check-input.form-check-light.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check .form-check-input.form-check-dark {
+  background-color: #666666;
+  border-color: #666666;
+}
+
+.form-check .form-check-input.form-check-dark:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.form-check .form-check-input.form-check-dark.form-check-glow {
+  box-shadow: 0 0 5px #666666;
+}
+
+.form-check .form-check-input.form-check-dark.form-check-glow:not(:checked) {
+  box-shadow: none;
+}
+
+.form-check.form-check-sm .form-check-input {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-top: 0.3em;
+}
+
+.form-check.form-check-sm label {
+  font-size: 0.7rem;
+}
+
+.form-check.form-check-primary .form-check-input {
+  background-color: #5A8DEE;
+  border-color: #5A8DEE;
+}
+
+.form-check.form-check-secondary .form-check-input {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.form-check.form-check-success .form-check-input {
+  background-color: #39da8a;
+  border-color: #39da8a;
+}
+
+.form-check.form-check-info .form-check-input {
+  background-color: #00CFDD;
+  border-color: #00CFDD;
+}
+
+.form-check.form-check-warning .form-check-input {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.form-check.form-check-danger .form-check-input {
+  background-color: tint-color(#dc3545, 2);
+  border-color: tint-color(#dc3545, 2);
+}
+
+.form-check.form-check-light .form-check-input {
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+}
+
+.form-check.form-check-dark .form-check-input {
+  background-color: #666666;
+  border-color: #666666;
+}
+
+.dataTable-input {
+  min-height: calc(1.5em + 0.934rem + 2px);
+  padding: 0.467rem 0.6rem;
+  font-size: 0.9025rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555252;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid #DFE3E7;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dataTable-input:focus {
+  color: #555252;
+  background-color: white;
+  border-color: #5A8DEE;
+  outline: 0;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.dataTable-table th {
   color: #495057;
 }
 
-.table > :not(:last-child) > :last-child > * {
+.table > :not(:last-child) > :last-child > *,
+.dataTable-table > :not(:last-child) > :last-child > * {
   border-bottom-color: #ced4da;
+}
+
+.dataTable-container {
+  overflow-x: auto;
 }
 
 #app {
