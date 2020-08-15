@@ -115,7 +115,7 @@ $pink-900: shade-color($pink, 8) !default;
 $red-100: tint-color($red, 8) !default;
 $red-200: tint-color($red, 6) !default;
 $red-300: tint-color($red, 4) !default;
-$red-400: tint-color($red, 2) !default;
+$red-400: mix(white, $red, 20) !default;
 $red-500: $red !default;
 $red-600: shade-color($red, 2) !default;
 $red-700: shade-color($red, 4) !default;
@@ -189,17 +189,7 @@ $theme-colors: (
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
+  "danger":     $red-400,
   "light":      $light,
   "dark":       $dark
 );
@@ -1102,6 +1092,7 @@ $modal-footer-border-width:         $modal-header-border-width !default;
 $modal-header-padding-y:            $modal-inner-padding !default;
 $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+$modal-header-font-size:            1.2rem;
 
 $modal-sm:                          300px !default;
 $modal-md:                          500px !default;
@@ -1151,8 +1142,8 @@ $list-group-border-color:           rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
-$list-group-item-padding-y:         $spacer / 2 !default;
-$list-group-item-padding-x:         $spacer !default;
+$list-group-item-padding-y:         $spacer * .75;
+$list-group-item-padding-x:         $spacer * 2;
 $list-group-item-bg-level:          -9 !default;
 $list-group-item-color-level:       6 !default;
 

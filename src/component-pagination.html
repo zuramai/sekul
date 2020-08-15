@@ -1,0 +1,290 @@
+{% set title = 'Pagination' %} {% set filename = 'component-pagination.html' %} {% extends 'layouts/master.html' %} {% block content %}
+<div class="page-title">
+	<h3>Pagination</h3>
+	<nav class="breadcrumb-header" aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Pagination</li>
+		</ol>
+	</nav>
+</div>
+<div class="row mt-3">
+	<div class="col-md-6">
+		<div class="card card-shadow">
+			<div class="card-header">
+				<h5 class='card-title'>Basic Pagination</h4>
+                <p class='card-subtitle'>Pagination with active item</p>
+			</div>
+			<div class="card-body">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-primary">
+						<li class="page-item"><a class="page-link" href="#">Prev</a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Next</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card card-shadow">
+			<div class="card-header">
+				<h5 class='card-title'>Pagination with Icon</h4>
+                <p class='card-subtitle'>Change prev and next button into icon</p>
+			</div>
+			<div class="card-body">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-primary">
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-left"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-right"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row mt-3">
+	<div class="col-md-6">
+		<div class="card card-shadow">
+			<div class="card-header">
+				<h5 class='card-title'>Pagination Color</h4>
+                <p class='card-subtitle'>To add pagination with different color option, use class <code>.pagination-{colorName}</code> with <code>.pagination</code> class.</p>
+			</div>
+			<div class="card-body">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-danger">
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-left"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+						<li class="page-item active "><a class="page-link" href="#">1</a></li>
+						<li class="page-item "><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-right"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-dark">
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-left"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-right"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-success">
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-left"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item "><a class="page-link" href="#">2</a></li>
+						<li class="page-item active"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-right"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card card-shadow">
+			<div class="card-header">
+				<h5 class='card-title'>Pagination Size</h4>
+                <p class='card-subtitle'>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+			</div>
+			<div class="card-body">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-primary pagination-sm">
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-left"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-right"/>
+                                    </svg>
+                                </span>
+                            </a>
+						</li>
+					</ul>
+				</nav>
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-primary">
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-left"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-right"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<nav aria-label="Page navigation example">
+					<ul class="pagination pagination-primary pagination-lg">
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-left"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<span aria-hidden="true">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#chevron-compact-right"/>
+                                    </svg>
+                                </span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row mt-3">
+    <div class="col-12">
+        <div class="card card-shadow">
+            <div class="card-header">
+                <h5 class='card-title'>Alignment</h5>
+                <p class='card-subtitle'>Change the alignment of pagination components with flexbox utilities.</p>
+            </div>
+            <div class="card-body">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-primary">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-primary  justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-primary  justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

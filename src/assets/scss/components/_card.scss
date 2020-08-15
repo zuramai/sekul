@@ -1,4 +1,7 @@
 .card {
+    .card-body {
+        padding: 1.5rem 2rem 1.5rem;
+    }
     .card-header {
         background-color: #fff;
         border-bottom: 0;
@@ -8,9 +11,10 @@
             color: $gray-600;
             font-size: $font-size-sm;
         }
-    }
-    .card-body {
-        padding: 0 2rem 1.5rem;
+
+        & + .card-body {
+            padding-top: 0;
+        }
     }
     &.card-shadow {
         border: none;
@@ -25,6 +29,16 @@
         h5 {
             font-weight: 500;
             color: #474747
+        }
+    }
+}
+.accordion {
+    .card {
+        border: 1px solid $gray-200;
+        border-radius: .4rem;
+        .card-header {
+            background-color: $gray-100;
+            border-bottom: 1px;
         }
     }
 }
